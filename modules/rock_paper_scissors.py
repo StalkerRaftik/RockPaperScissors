@@ -54,11 +54,12 @@ class RockPaperScissors(BaseModule):
                 if self.is_player_won(pos):
                     self.core.state['winner'] = self.player
                     self.deactivate()
+                    return
                 self.change_player()
 
     def is_player_won(self, new_input):
         map = self.game_map
-        possible_win_vectors = ([1, 0], [0, 1], [1, 1])
+        possible_win_vectors = ([1, 0], [0, 1], [1, 1], [1, -1])
         score_to_win = self.core.state['game_size']
         for win_vect in possible_win_vectors:
             # a bit silly logic, because we're counting new input value twice
