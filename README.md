@@ -1,5 +1,3 @@
-# RockPaperScissors
-
 # HOW TO USE:
 1) Download project
 2) Create your virtual environment with pip and python
