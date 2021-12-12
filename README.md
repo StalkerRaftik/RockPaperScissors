@@ -1,6 +1,6 @@
 # RockPaperScissors
 
-HOW TO USE:
+# HOW TO USE:
 1) Download project
 2) Create your virtual environment with pip and python
 2) Install requirements via `pip install -r requirements.txt` 
